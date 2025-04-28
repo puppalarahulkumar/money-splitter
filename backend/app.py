@@ -4,7 +4,6 @@ import pytesseract
 import cv2
 from werkzeug.utils import secure_filename
 import re
-import math
 
 import os
 app=Flask(__name__)
