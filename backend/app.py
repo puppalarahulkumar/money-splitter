@@ -36,6 +36,7 @@ def upload_file():
         return jsonify({"message": "File uploaded successfully!", "filename": filename}), 200
     else:
         return jsonify({"message": "No file provided"}), 400
+
 @app.route('/process',methods=['post'])
 def process_image():
     filename=request.json.get('filename')
